@@ -10,9 +10,7 @@
       <label for="password">Contraseña</label>
       <input type="password" id="password" placeholder="Contraseña" required />
     <!-- </div> -->
-    <button type="submit">Iniciar sesión</button>
-
-    <br>
+    <button type="submit"  >Iniciar sesión</button>
     <p>¿No tienes una cuenta? <a href="/registrarse.php">Registrate</a></p>
   </form>
 
