@@ -9,27 +9,26 @@
   <?php
     include_once($_SERVER["DOCUMENT_ROOT"]."/components/template/header.php");?>
     <nav class="nav">
-            <a href="/perfil.php" class="home">Inicio</a>
-            <!-- falta crear el archivo donde se muestran los reportes de status aceptado y atendiendo -->
+            <a href="/index.php" class="home">Inicio</a>
             <a href="#" class="reportes">Reportes</a>
-            <a href="/" class="crear-reportes">Generar Reporte</a>
+            <a href="#" class="crear-reportes">Generar Reporte</a>
             <a href="#" class="act-reportes" >Actualizar Reportes</a>
-            <!-- <a href="/inicio-no-login" class="login">Cerrar Sesion</a>   -->
+            <a href="/loginp.php" class="login">Iniciar Sesion</a>  
     </nav>
     <?php
         include_once($_SERVER["DOCUMENT_ROOT"]."/components/template/section.php");
     ?>
     <section class="section">
     <div class="breadcrums">
-        <p>Denuncia Ciudadana / <span>Generar Reporte</span></p>
+        <p>Denuncia Ciudadana / <span>Iniciar Sesion</span></p>
     </div>
 
-  <?php 
-  include_once($_SERVER["DOCUMENT_ROOT"]."/components/mapForm.php");
-  include_once($_SERVER["DOCUMENT_ROOT"]."/components/report.php");?>
+   
+  <?php include_once($_SERVER["DOCUMENT_ROOT"]."/components/login.php");
+   ?>
   </section>
-<?php
+  <?php
     include_once($_SERVER["DOCUMENT_ROOT"]."/components/template/footer.php");
-?>
+  ?>
 </body>
 </html>
