@@ -17,6 +17,8 @@
       return $result;
     }
     function post($query) {
+      echo $query;
+      
       $exec = $this->con->query($query);
       $insertId = $this->con->insert_id;
       return ["success" => $exec, "id" => $insertId];
